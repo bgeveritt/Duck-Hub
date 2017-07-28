@@ -9,7 +9,7 @@
 		<name>Black Duck Software</name>
 		<url>http://www.blackducksoftware.com</url>
 	</organization>
-	
+
 	<properties>
 		<java-version>1.6</java-version>
 		<org.springframework-version>4.2.2.RELEASE</org.springframework-version>
@@ -26,44 +26,44 @@
 			<artifactId>jep</artifactId>
 			<version>2.24</version>
 		</dependency>
-		
+
 		<dependency>
 		    <groupId>org.apache.neethi</groupId>
 		    <artifactId>neethi</artifactId>
 		    <version>3.0.3</version>
 		</dependency>
-		
+
 		<dependency>
 		    <groupId>org.jasypt</groupId>
 		    <artifactId>jasypt</artifactId>
 		    <version>1.9.1</version>
 		</dependency>
-		
+
 		<dependency>
 		    <groupId>org.jboss.spec.javax.transaction</groupId>
 		    <artifactId>jboss-transaction-api_1.1_spec</artifactId>
 		    <version>1.0.1.Final</version>
 		</dependency>
-		
+
 		<dependency>
 		    <groupId>opensymphony</groupId>
 		    <artifactId>sitemesh</artifactId>
 		    <version>2.4.2</version>
 		</dependency>
-		
+
 		<dependency>
 		    <groupId>org.apache.poi</groupId>
 		    <artifactId>poi</artifactId>
 		    <version>3.16</version>
 		</dependency>
-		
+
 		<dependency>
 		    <groupId>postgresql</groupId>
 		    <artifactId>postgresql</artifactId>
 		    <version>8.3-603.jdbc3</version>
 		</dependency>
-	
-		
+
+
 		<!-- struts -->
 		<!-- -->
 		<dependency>
@@ -71,22 +71,22 @@
 		    <artifactId>struts2-core</artifactId>
 		    <version>2.3.32</version>
 		</dependency>
-		
+
 		<dependency>
 		    <groupId>org.eclipse.jetty</groupId>
 		    <artifactId>jetty-server</artifactId>
 		    <version>7.1.0.v20100505</version>
 		</dependency>
-		
-	
-		
+
+
+
 		<!-- Grizzly -->
 		<dependency>
 		    <groupId>com.sun.grizzly</groupId>
 		    <artifactId>grizzly-framework</artifactId>
 		    <version>1.9.14</version>
 		</dependency>
-		
+
 		<!-- Spring -->
 
 		<dependency>
@@ -110,19 +110,19 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-		
+
 		<dependency>
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-core</artifactId>
 		    <version>4.1.1.RELEASE</version>
 		</dependency>
-		
+
 		<dependency>
 		    <groupId>org.codehaus.jackson</groupId>
 		    <artifactId>jackson-core-asl</artifactId>
 		    <version>1.9.10</version>
 		</dependency>
-		
+
 		<dependency>
 		    <groupId>org.codehaus.jackson</groupId>
 		    <artifactId>jackson-mapper-asl</artifactId>
@@ -134,20 +134,20 @@
 			<artifactId>xalan</artifactId>
 			<version>2.7.2</version>
 		</dependency>
-		
+
 		<dependency>
 		    <groupId>com.google.guava</groupId>
 		    <artifactId>guava</artifactId>
 		    <version>11.0.2</version>
 		</dependency>
-		
-		
+
+
 		<dependency>
 		    <groupId>org.apache.httpcomponents</groupId>
 		    <artifactId>httpclient</artifactId>
 		    <version>4.4.1</version>
 		</dependency>
-		
+
 		<dependency>
 		    <groupId>org.apache.httpcomponents</groupId>
 		    <artifactId>httpcore</artifactId>
@@ -274,25 +274,6 @@
 	</dependencies>
 	<build>
 		<plugins>
-		<plugin>
-               <groupId>com.blackducksoftware.integration</groupId>
-               <artifactId>hub-maven-plugin</artifactId>
-               <version>2.0.0</version>
-               <inherited>false</inherited>
-               <configuration>
-                 <target>${project.basedir}</target>
-               </configuration>
-               <executions>
-                   <execution>
-                       <id>build-bom</id>
-                       <phase>package</phase>
-                       <goals>
-                           <goal>build-bom</goal>
-                       </goals>
-                   </execution>
-               </executions>
-            </plugin>
-			<plugin>
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<version>2.9</version>
 				<configuration>
@@ -343,13 +324,13 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>			
+			</plugin>
 
 		</plugins>
 
 		<pluginManagement>
 			<plugins>
-				<!--This plugin's configuration is used to store Eclipse m2e settings 
+				<!--This plugin's configuration is used to store Eclipse m2e settings
 					only. It has no influence on the Maven build itself. -->
 				<!--<plugin>
 					<groupId>org.eclipse.m2e</groupId>
@@ -384,6 +365,6 @@
 					</configuration>
 				</plugin>-->
 			</plugins>
-		</pluginManagement>		
+		</pluginManagement>
 	</build>
 </project>
