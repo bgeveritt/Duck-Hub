@@ -1,0 +1,2 @@
+on_success:
+  - bash <(curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh) --blackduck.hub.url=http://saleshub.blackducksoftware.com --blackduck.hub.username=sysadmin --blackduck.hub.password=F@w0m0!
