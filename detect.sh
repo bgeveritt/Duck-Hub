@@ -1,2 +1,2 @@
 #!/bin/bash
-bash <(curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh) --blackduck.hub.url=https://hubeval64.blackducksoftware.com --blackduck.hub.username=jvalance --blackduck.hub.password=demo
+bash <(curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh) --blackduck.hub.url=https://hubeval68.blackducksoftware.com --blackduck.hub.username=jvalance --blackduck.hub.password=demo
