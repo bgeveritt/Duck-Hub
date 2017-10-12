@@ -6,8 +6,6 @@ image_resource:
   source: 
     repository: openjdk
     tag: '8'
-    username: jvalance
-    password: 226137@kKk
 
 inputs:
 - name: duck-hub
