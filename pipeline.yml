@@ -1,0 +1,13 @@
+---
+resources:
+  - name: duck-hub
+    type: git
+    source:
+      uri: https://github.com/valancej/duck-hub.git
+      branch: master
+jobs:
+  - name: build
+    plan:
+      - get: duck-hub
+      - task: build
+        file: duck-hub/build.yml
