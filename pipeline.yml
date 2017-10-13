@@ -11,3 +11,5 @@ jobs:
       - get: duck-hub
       - task: package
         file: duck-hub/package.yml
+      - task: hub-detect
+        file: duck-hub/detect.yml
