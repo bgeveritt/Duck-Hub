@@ -10,17 +10,13 @@ image_resource:
 inputs:
 - name: duck-hub
 
-caches:
-- path: duck-hub/target
-
 run:
   path: bash
   args: 
   - -exc
   - |
-    cd duck-hub
-    ls
-    pwd
-    java -version
     wget http://www.trieuvan.com/apache/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz
+    tar xzvf apache-maven-3.5.0-bin.tar.gz
+    cd duck-hub
+    mvn package
     bash <(curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh) --blackduck.hub.url=https://hubeval68.blackducksoftware.com --blackduck.hub.username=sysadmin --blackduck.hub.password=F@w0m0! blackduck.hub.auto.import.cert=true
