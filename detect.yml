@@ -8,7 +8,7 @@ image_resource:
     tag: '8'
 
 inputs:
-- name: duck-hub
+- name: mvn-package-output
 
 run:
   path: sh
