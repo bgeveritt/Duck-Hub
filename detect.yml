@@ -21,4 +21,7 @@ run:
     cd duck-hub
     ls
     pwd
-    bash <(curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh) --blackduck.hub.url=https://hubeval68.blackducksoftware.com --blackduck.hub.username=sysadmin --blackduck.hub.password=F@w0m0! blackduck.hub.auto.import.cert=true
+    ls -la
+    mvn -v
+    tar xzvf apache-maven-3.5.0-bin.tar.gz
+    mvn -v
