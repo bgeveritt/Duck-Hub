@@ -11,4 +11,4 @@ inputs:
 - name: duck-hub
 
 run:
-  path: ls
+  path: cd duck-hub && ls
