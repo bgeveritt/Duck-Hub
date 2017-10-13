@@ -22,6 +22,5 @@ run:
     ls
     pwd
     ls -la
-    mvn -v
     tar xzvf apache-maven-3.5.0-bin.tar.gz
     mvn -v
