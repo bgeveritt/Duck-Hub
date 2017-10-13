@@ -11,4 +11,6 @@ inputs:
 - name: duck-hub
 
 run:
-  path: duck-hub/detect.sh
+  path: mvn
+  args: ["-f", "duck-hub/pom.xml"]
+
