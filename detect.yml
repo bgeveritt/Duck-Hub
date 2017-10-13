@@ -16,5 +16,5 @@ run:
   - -exc
   - |
     ls
-    cd duck-hub
+    cd mvn-package-output
     ls
