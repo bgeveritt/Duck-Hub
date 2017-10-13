@@ -15,5 +15,5 @@ outputs:
 
 run:
   path: mvn
-  args: ["package"]
+  args: ["-f", "duck-hub/pom.xml", "package"]
 

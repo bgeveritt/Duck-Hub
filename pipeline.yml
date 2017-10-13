@@ -6,8 +6,8 @@ resources:
       uri: https://github.com/valancej/duck-hub.git
       branch: master
 jobs:
-  - name: build
+  - name: package
     plan:
       - get: duck-hub
-      - task: build
-        file: duck-hub/build.yml
+      - task: package
+        file: duck-hub/package.yml
