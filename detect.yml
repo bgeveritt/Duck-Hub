@@ -14,7 +14,7 @@ caches:
 - path: duck-hub/target
 
 run:
-  path: sh
+  path: bash
   args: 
   - -exc
   - |
