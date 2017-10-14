@@ -17,3 +17,4 @@ run:
     cd duck-hub
     echo $PATH
     echo $JAVA_HOME
+    mvn package
